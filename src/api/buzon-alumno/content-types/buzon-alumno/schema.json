@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buzon_alumnos",
+  "info": {
+    "singularName": "buzon-alumno",
+    "pluralName": "buzon-alumnos",
+    "displayName": "buzon_alumno",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_alumnos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alumno.alumno"
+    },
+    "mensaje": {
+      "type": "text"
+    },
+    "id_admins": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::admin.admin"
+    }
+  }
+}

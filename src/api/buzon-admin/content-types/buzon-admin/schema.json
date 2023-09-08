@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buzon_admins",
+  "info": {
+    "singularName": "buzon-admin",
+    "pluralName": "buzon-admins",
+    "displayName": "buzon_admin",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_admin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::admin.admin"
+    },
+    "mensaje": {
+      "type": "text"
+    },
+    "id_user": {
+      "type": "string",
+      "required": true
+    },
+    "role_user": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

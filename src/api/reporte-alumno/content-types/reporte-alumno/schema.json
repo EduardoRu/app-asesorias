@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reporte_alumnos",
+  "info": {
+    "singularName": "reporte-alumno",
+    "pluralName": "reporte-alumnos",
+    "displayName": "reporte_alumno",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "desc_reporte": {
+      "type": "text"
+    },
+    "para_alumno": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::alumno.alumno"
+    },
+    "de_asesor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::asesor.asesor"
+    }
+  }
+}

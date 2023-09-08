@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buzon_asesors",
+  "info": {
+    "singularName": "buzon-asesor",
+    "pluralName": "buzon-asesors",
+    "displayName": "buzon_asesor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mensaje": {
+      "type": "text",
+      "required": true
+    },
+    "id_asesor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::asesor.asesor"
+    },
+    "id_admins": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::admin.admin"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asesors",
+  "info": {
+    "singularName": "asesor",
+    "pluralName": "asesors",
+    "displayName": "Asesor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "apellido_p": {
+      "type": "string"
+    },
+    "apellido_m": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "asesor"
+    },
+    "rol_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rol.rol"
+    },
+    "categorias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::categoria.categoria"
+    },
+    "foto_asesor": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "video_asesor": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "audio_asesor": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "desc": {
+      "type": "text",
+      "required": false
+    },
+    "institucion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::institucion.institucion"
+    }
+  }
+}

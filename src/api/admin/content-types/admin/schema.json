@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admins",
+  "info": {
+    "singularName": "admin",
+    "pluralName": "admins",
+    "displayName": "Admin",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellido_p": {
+      "type": "string"
+    },
+    "apellido_m": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "admin"
+    },
+    "rol": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rol.rol"
+    },
+    "institucion": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::institucion.institucion"
+    }
+  }
+}

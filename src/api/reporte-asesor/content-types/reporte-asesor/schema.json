@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reporte_asesors",
+  "info": {
+    "singularName": "reporte-asesor",
+    "pluralName": "reporte-asesors",
+    "displayName": "reporte_asesor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "desc_reporte": {
+      "type": "text"
+    },
+    "de_alumno": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::alumno.alumno"
+    },
+    "para_asesor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::asesor.asesor"
+    }
+  }
+}

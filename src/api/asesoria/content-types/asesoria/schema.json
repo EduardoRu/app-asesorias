@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asesorias",
+  "info": {
+    "singularName": "asesoria",
+    "pluralName": "asesorias",
+    "displayName": "asesoria",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_alumno": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::alumno.alumno"
+    },
+    "id_asesor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::asesor.asesor"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Pendiente",
+        "En curso",
+        "Finalizado"
+      ],
+      "required": true
+    },
+    "detalles": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

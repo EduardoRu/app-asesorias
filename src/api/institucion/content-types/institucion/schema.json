@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "institucions",
+  "info": {
+    "singularName": "institucion",
+    "pluralName": "institucions",
+    "displayName": "Institucion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
