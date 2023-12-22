@@ -42,6 +42,13 @@
     "genero": {
       "type": "string",
       "required": false
+    },
+    "foto_alumno": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

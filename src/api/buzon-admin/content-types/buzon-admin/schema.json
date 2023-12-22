@@ -12,21 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "id_admin": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::admin.admin"
-    },
     "mensaje": {
       "type": "text"
     },
-    "id_user": {
-      "type": "string",
-      "required": true
+    "asesors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::asesor.asesor"
     },
-    "role_user": {
-      "type": "string",
-      "required": true
+    "alumnos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alumno.alumno"
     }
   }
 }

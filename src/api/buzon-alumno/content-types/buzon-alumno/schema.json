@@ -12,18 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "id_alumnos": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::alumno.alumno"
-    },
     "mensaje": {
       "type": "text"
     },
-    "id_admins": {
+    "alumnos": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::admin.admin"
+      "target": "api::alumno.alumno"
     }
   }
 }

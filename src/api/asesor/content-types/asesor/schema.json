@@ -71,6 +71,13 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::institucion.institucion"
+    },
+    "nivel": {
+      "type": "integer"
+    },
+    "misEstrellas": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

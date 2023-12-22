@@ -26,6 +26,7 @@
       "type": "enumeration",
       "enum": [
         "Pendiente",
+        "Rechazada",
         "En curso",
         "Finalizado"
       ],
@@ -34,6 +35,12 @@
     "detalles": {
       "type": "text",
       "required": true
+    },
+    "resena": {
+      "type": "text"
+    },
+    "star": {
+      "type": "integer"
     }
   }
 }

@@ -37,6 +37,13 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::institucion.institucion"
+    },
+    "foto_admin": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

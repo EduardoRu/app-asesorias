@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "niveles",
+  "info": {
+    "singularName": "nivele",
+    "pluralName": "niveles",
+    "displayName": "nivele",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "asesorias_requeridas": {
+      "type": "json"
+    }
+  }
+}

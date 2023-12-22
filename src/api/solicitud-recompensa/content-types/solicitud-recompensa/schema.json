@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solicitud_recompensas",
+  "info": {
+    "singularName": "solicitud-recompensa",
+    "pluralName": "solicitud-recompensas",
+    "displayName": "solicitud_recompensa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "asesors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::asesor.asesor"
+    },
+    "recompensas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recompensa.recompensa"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Pendiente",
+        "En curso",
+        "Entregada",
+        "Rechazada"
+      ]
+    }
+  }
+}
