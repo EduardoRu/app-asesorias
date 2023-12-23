@@ -4,7 +4,8 @@
   "info": {
     "singularName": "publicacione",
     "pluralName": "publicaciones",
-    "displayName": "publicacione"
+    "displayName": "publicacione",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,11 +21,17 @@
       "target": "plugin::users-permissions.user"
     },
     "imgaen_publicacion": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "user_creador": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
